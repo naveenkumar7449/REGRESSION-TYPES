@@ -28,3 +28,31 @@ To run the notebook, ensure you have the following dependencies installed:
   ```bash
   pip install pandas numpy matplotlib seaborn scikit-learn
   ```
+
+## Notebook Structure
+The notebook is organized as follows:
+
+- **Introduction to Regression**: A brief overview of regression as a supervised learning technique.
+- **Data Preprocessing**:
+  - Loading the dataset using pandas.
+  - Handling missing values by dropping rows with null entries.
+  - One-hot encoding the categorical variable `ocean_proximity`.
+  - Splitting the data into training and testing sets (80-20 split).
+  - Standardizing numerical features using `StandardScaler`.
+- **Regression Models**:
+  - **Linear Regression**: Models the relationship using a straight line.
+  - **Ridge Regression**: Adds L2 regularization to prevent overfitting.
+  - **Lasso Regression**: Uses L1 regularization for feature selection.
+  - **Polynomial Regression**: Captures non-linear relationships using polynomial features.
+  - **Decision Tree Regression**: Models non-linear relationships using a tree-based approach.
+  - **Random Forest Regression**: An ensemble method combining multiple decision trees.
+- **Model Evaluation**:
+  - Each model is evaluated using Mean Squared Error (MSE) and R² Score.
+  - Visualizations (scatter plots) compare actual vs. predicted values for each model.
+- **Results**: Performance metrics for all models are printed, and visualizations are generated using Matplotlib and Seaborn.
+
+## Acknowledgments
+- The California Housing Prices dataset is sourced from Kaggle.
+- Built using Python, Scikit-learn, Pandas, Matplotlib, and Seaborn.
+
+- Under the guidance of Victor A I
